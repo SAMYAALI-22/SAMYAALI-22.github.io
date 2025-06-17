@@ -1,0 +1,107 @@
+body {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  color: #00ffcc;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #00ffcc;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toggle-mode {
+  background: transparent;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.articles {
+  padding: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #1b1b1b;
+  border: 1px solid #00ffcc55;
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00ffcc;
+}
+
+.card h4 {
+  color: #00ffee;
+}
+
+.card p {
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #888;
+}
+
+/* Dark/Light Mode Toggle Support */
+.light-mode {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.light-mode header,
+.light-mode footer {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.light-mode nav a,
+.light-mode .toggle-mode {
+  color: #007777;
+}
+
+.light-mode .card {
+  background: #f9f9f9;
+  color: #222;
+  border-color: #00dddd55;
+}
